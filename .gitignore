@@ -1,0 +1,9 @@
+# Ignorar arquivos de ambiente
+*.env
+config.env
+
+# Ignorar pastas de cache e IDE
+__pycache__/
+.idea/
+*.pyc
+.DS_Store
