@@ -22,6 +22,12 @@ Contains a clean and minimal personal profile layout with profile image, short d
 A mini blog built with Flask that consumes posts from an external JSON API and renders them dynamically using Jinja templates.  
 Features dynamic routing, post pages, and a clean blog layout.  
 
+### 05 - Move It - Bootstrap Homepage  
+Learning project using **Bootstrap 5**, focused on layout, grid, and responsiveness.  
+Includes a responsive navbar, hero section with call-to-action buttons, services grid, carousel, and footer.  
+All visual elements are functional for layout only; buttons, search bar, and carousel interactions are not implemented.
+
+
 ---
 
 ## How to Use
