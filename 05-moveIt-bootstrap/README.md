@@ -1,63 +1,63 @@
-# Move It - Página Inicial Bootstrap
+# Move It - Bootstrap Homepage
 
-Exercício de aprendizado de **Bootstrap 5**, focado em **layout, grid e responsividade**.  
-O objetivo foi entender **como as classes e componentes do Bootstrap funcionam**, sem implementar toda a lógica funcional.
-
----
-
-## 📌 Estrutura do Projeto
-
-- **Navbar**: menu e barra de pesquisa (visual apenas)  
-- **Seção principal**: botões de call-to-action centralizados e imagem responsiva  
-- **Serviços**: grid com 3 cards (ícones + títulos + descrições)  
-- **Carrossel**: slides de imagens  
-- **Footer**: links e informações da empresa  
+Learning exercise using **Bootstrap 5**, focused on **layout, grid, and responsiveness**.  
+The goal was to understand **how Bootstrap classes and components work**, without implementing full functionality.
 
 ---
 
-## ⚡ Funcionalidades visuais
+## 📌 Project Structure
 
-- Layout responsivo com `container`, `row`, `col` e `row-cols-*`  
-- Botões estilizados (`btn`, `btn-primary`, `btn-outline-secondary`)  
-- Grid de cards de serviços  
-- Navbar com dropdown (visual)  
-- Carrossel (visual)
-
----
-
-## ❌ Funcionalidades que não funcionam
-
-- Botões de call-to-action (Get a Quote / Contact Us)  
-- Barra de pesquisa  
-- Interações do carrossel, dropdown ou menu toggle (necessitam JS extra ou backend)  
-
-> **Motivo:** foco foi em layout e responsividade, não em lógica funcional.
+- **Navbar**: menu and search bar (visual only)  
+- **Hero Section**: centered call-to-action buttons and responsive image  
+- **Services**: grid with 3 cards (icons + titles + descriptions)  
+- **Carousel**: image slides  
+- **Footer**: navigation links and company info  
 
 ---
 
-## 💡 Aprendizados
+## ⚡ Visual Features
 
-- Como usar o **grid do Bootstrap** para diferentes tamanhos de tela  
-- Classes de espaçamento (`px-*`, `py-*`, `g-*`)  
-- Centralização de conteúdo com Flexbox (`d-flex`, `justify-content-center`, `align-items-center`)  
-- Diferença entre `container` e `container-fluid`  
-
----
-
-## ❓ Questionamentos
-
-1. Centralização vertical de elementos usando Flexbox  
-2. Como o grid reage em diferentes breakpoints  
-3. Quando usar utilitários de espaçamento  
-4. Por que botões e menus precisam de JS mesmo estando estilizados  
+- Responsive layout using `container`, `row`, `col`, and `row-cols-*`  
+- Styled buttons (`btn`, `btn-primary`, `btn-outline-secondary`)  
+- Services cards grid  
+- Navbar with dropdown (visual)  
+- Carousel (visual)
 
 ---
 
-## 🖼️ Preview do Site
+## ❌ Features Not Functional
 
-> ![Preview do site](print_full_page.png)
+- Call-to-action buttons (Get a Quote / Contact Us)  
+- Search bar  
+- Carousel, dropdown, or toggle interactions (require extra JS or backend)  
+
+> **Reason:** focus was on layout and responsiveness, not functional logic.
 
 ---
 
-**Autor:** Bruno Henrique Domingos  
-**Objetivo:** Aprender Bootstrap e construir layouts responsivos
+## 💡 Learnings
+
+- Using the **Bootstrap grid** for different screen sizes  
+- Spacing classes (`px-*`, `py-*`, `g-*`)  
+- Centering content with Flexbox (`d-flex`, `justify-content-center`, `align-items-center`)  
+- Difference between `container` and `container-fluid`  
+
+---
+
+## ❓ Questions / Considerations
+
+1. Vertical centering using Flexbox  
+2. How the grid behaves at different breakpoints  
+3. When to use spacing utilities  
+4. Why buttons and menus require JS even when styled correctly  
+
+---
+
+## 🖼️ Site Preview
+
+> ![Preview of the site](print_full_page.png)
+
+---
+
+**Author:** Bruno Henrique Domingos  
+**Goal:** Learn Bootstrap and build responsive layouts
