@@ -27,7 +27,10 @@ Learning project using **Bootstrap 5**, focused on layout, grid, and responsiven
 Includes a responsive navbar, hero section with call-to-action buttons, services grid, carousel, and footer.  
 All visual elements are functional for layout only; buttons, search bar, and carousel interactions are not implemented.
 
-
+### 06 - TinDog - Bootstrap Landing Page
+Learning project using Bootstrap 5, focused on layout, spacing, and responsive design.
+Includes a hero section with call-to-action buttons, features section with icons, testimonial area, pricing cards, and footer.
+All elements are built for UI practice only; buttons and links are non-functional.
 ---
 
 ## How to Use
