@@ -31,6 +31,7 @@ All visual elements are functional for layout only; buttons, search bar, and car
 Learning project using Bootstrap 5, focused on layout, spacing, and responsive design.
 Includes a hero section with call-to-action buttons, features section with icons, testimonial area, pricing cards, and footer.
 All elements are built for UI practice only; buttons and links are non-functional.
+
 ---
 
 ## How to Use
