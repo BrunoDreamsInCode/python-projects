@@ -74,7 +74,7 @@ In this updated version:
 ---
 
 ## Project Structure
-
+```
 project/
 ├─ main.py
 ├─ .env
@@ -84,7 +84,7 @@ project/
 │   ├─ contact.html
 │   └─ post.html
 └─ static/
-
+```
 ---
 
 ## Screenshots
