@@ -1,8 +1,41 @@
 from pprint import pprint
+from dotenv import load_dotenv
+from email.message import EmailMessage
+from flask import Flask, render_template, request
+import requests, pprint, smtplib, os
 
-from flask import Flask, render_template
-import requests, pprint
-from six import raise_from
+
+
+
+load_dotenv()
+
+def send_form(name, email, tel, message):
+
+    my_email = os.getenv("MY_EMAIL")
+    my_password = os.getenv("APP_PASSWORD")
+
+    msg = EmailMessage()
+    msg["Subject"] = "New Contact Form"
+    msg["From"] = my_email
+    msg["To"] = my_email
+    msg["Reply-To"] = email
+
+    msg.set_content(f"""
+    Name: {name}
+    Email: {email}
+    Phone: {tel}
+
+    Message:
+    {message}
+    """)
+
+    with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+        connection.starttls()
+        connection.login(my_email, my_password)
+        connection.send_message(msg)
+
+
+
 
 def get_all_posts():
     response = requests.get(url='https://api.npoint.io/0e145271c967686f2545')
@@ -22,9 +55,21 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template('contact.html')
+    if request.method == "POST":
+        name = request.form.get("name")
+        email = request.form.get("email")
+        tel = request.form.get("tel")
+        message = request.form.get("message")
+        print(f"Name: {name}\nEmail: {email}\n Tel: {tel}\nMessage: {message}")
+
+        send_form(name=name, email=email, tel=tel, message=message)
+        return render_template("form_feedback.html", name=name, email=email, tel=tel, message=message)
+    else:
+        return render_template('contact.html')
+
+
 
 @app.route("/post/<slug>")
 def post(slug):
@@ -35,6 +80,7 @@ def post(slug):
             return render_template("post.html", post=post)
 
     return "Post not found", 404
+
 
 
 
