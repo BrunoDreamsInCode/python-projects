@@ -32,6 +32,11 @@ Learning project using Bootstrap 5, focused on layout, spacing, and responsive d
 Includes a hero section with call-to-action buttons, features section with icons, testimonial area, pricing cards, and footer.
 All elements are built for UI practice only; buttons and links are non-functional.
 
+### 07 - Flask Cafe Finder
+A simple web application built with Flask to register and visualize cafes.
+Uses WTForms for form handling and CSV as a lightweight data storage solution.
+Includes features to add new cafes with details like location, opening hours, and ratings (coffee, wifi, power), and display them in a structured table using Jinja templates.
+
 ---
 
 ## How to Use
