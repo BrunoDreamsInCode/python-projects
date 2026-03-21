@@ -108,6 +108,12 @@ http://127.0.0.1:5000/
 
 ---
 
+## 🎥 Demo
+
+## 📹 Demo GIF 
+![demo_gif.gif](assets/prints/demo_gif.gif)
+
+---
 ## 📸 Screens
 
 * Home page
@@ -125,9 +131,7 @@ http://127.0.0.1:5000/
 * Cafes list table
 ![all_cafes_list.png](assets/prints/all_cafes_list.png)
 
-
 ---
-
 ## 📌 Future Improvements
 
 * Edit and delete entries
