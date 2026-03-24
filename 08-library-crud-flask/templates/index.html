@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: #fff;
+    }
+
+    .card {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s forwards;
+      animation-delay: calc(var(--i) * 0.1s);
+    }
+
+    @keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .card-text {
+      color: #ccc;
+    }
+    .btn-custom {
+      min-width: 90px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <h1>📚 My Library</h1>
+      <a href="{{ url_for('add') }}" class="btn btn-primary btn-lg mt-3">Add New Book</a>
+    </div>
+
+    {% if not all_books %}
+      <p class="text-center mt-5">Library is Empty.</p>
+    {% else %}
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for book in all_books %}
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">{{ book.title }}</h5>
+                  <p class="card-text">Author: {{ book.author }}</p>
+                  <p class="card-text">Rating: {{ book.rating }}</p>
+                </div>
+                <div class="mt-3 d-flex justify-content-between">
+                  <a href="{{ url_for('edit', id_book=book.id) }}" class="btn btn-warning btn-sm btn-custom">
+                    <i class="bi bi-pencil-square"></i> Edit
+                  </a>
+                  <a href="{{ url_for('delete', id_book=book.id) }}" class="btn btn-danger btn-sm btn-custom">
+                    <i class="bi bi-trash"></i> Delete
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

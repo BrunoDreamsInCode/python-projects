@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container text-center mt-5">
+    <div class="card bg-danger text-white mx-auto" style="max-width: 500px;">
+      <div class="card-body">
+        <h4 class="card-title">Error</h4>
+        <p class="card-text">{{ message }}</p>
+        <a href="{{ url_for('home') }}" class="btn btn-light">Go Home</a>
+        <a href="{{ url_for(back_url, id_book=back_id) }}" class="btn btn-warning">Go Back</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
