@@ -17,7 +17,6 @@ Built with Flask, this project allows users to create their own ranked movie lis
 ---
 
 ## 🖼️ Preview
-
 ### 📸 Screenshots & GIFs
 
 #### Home ![home cards.gif](assets/GIF/home%20cards.gif)
@@ -30,9 +29,9 @@ Built with Flask, this project allows users to create their own ranked movie lis
 
 ---
 
-### 🎥 Demo
+### 🎥 Full Demo
+![Demo GIF.gif](assets/GIF/Demo%20GIF.gif)
 
-![Demo](./screenshots/demo.gif)
 
 ---
 
