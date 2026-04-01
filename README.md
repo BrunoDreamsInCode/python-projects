@@ -37,6 +37,12 @@ A simple web application built with Flask to register and visualize cafes.
 Uses WTForms for form handling and CSV as a lightweight data storage solution.
 Includes features to add new cafes with details like location, opening hours, and ratings (coffee, wifi, power), and display them in a structured table using Jinja templates.
 
+### 08 - Library CRUD - Flask Web App
+A modern web application built with Flask to manage a personal book collection. Uses SQLAlchemy for database operations and Bootstrap 5 for a responsive and polished UI. Includes full CRUD functionality, form validation, and smooth interface interactions.
+
+### 09 - Movie Ranking CRUD - API Web App
+A Flask-based web application that integrates with an external API (TMDB) to search and manage movies. Allows users to build a personal ranked list with ratings and reviews. Features dynamic ranking logic, API integration, and full CRUD operations.
+
 ---
 
 ## How to Use
