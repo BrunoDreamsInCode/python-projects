@@ -43,6 +43,9 @@ A modern web application built with Flask to manage a personal book collection. 
 ### 09 - Movie Ranking CRUD - API Web App
 A Flask-based web application that integrates with an external API (TMDB) to search and manage movies. Allows users to build a personal ranked list with ratings and reviews. Features dynamic ranking logic, API integration, and full CRUD operations.
 
+### 10 - Flask CRUD Blog System
+A Flask web application for managing blog posts with full CRUD functionality. It uses SQLAlchemy for database handling, Flask-WTF for forms, and Bootstrap 5 for a responsive UI. Includes rich text editing with CKEditor and dynamic rendering with Jinja templates. Built to practice backend development, database operations, and Flask project structure.
+
 ---
 
 ## How to Use
