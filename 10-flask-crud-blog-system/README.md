@@ -18,19 +18,24 @@ This project allows users to create, read, update, and delete blog posts stored 
 - 🗃️ SQLite database with SQLAlchemy ORM
 
 ---
+
 ## 🖼️ Preview
 ### 📸 Screenshots & GIFs
 
-### Overview
+---
+#### 🔍 Overview
 ![overview.gif](static/assets/GIFS/overview.gif)
 
-### Create Post
+---
+#### ➕ Create Post
 ![create-post.gif](static/assets/GIFS/create-post.gif)
 
-### Edit Post
+---
+#### ✏️ Edit Post
 ![edit-post.gif](static/assets/GIFS/edit-post.gif)
 
-### Delete Post
+---
+#### ❌ Delete Post
 ![delete-post.gif](static/assets/GIFS/delete-post.gif)
 
 ---
